@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BloodSync - Connecting Donors, Saving Lives</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../assets/js/script.js"></script>
 
 </head>
 
@@ -59,18 +59,19 @@
             <!-- STATS -->
             <div class="mt-10 flex space-x-10">
                 <div>
-                    <p class="text-3xl font-bold text-red-600">10,000+</p>
+                    <p class="countup text-3xl font-bold text-red-600" data-target="10000">0</p>
                     <p class="text-gray-600">Active Donors</p>
                 </div>
                 <div>
-                    <p class="text-3xl font-bold text-red-600">5,000+</p>
+                    <p class="countup text-3xl font-bold text-red-600" data-target="5000">0</p>
                     <p class="text-gray-600">Lives Saved</p>
                 </div>
                 <div>
-                    <p class="text-3xl font-bold text-red-600">50+</p>
+                    <p class="countup text-3xl font-bold text-red-600" data-target="50">0</p>
                     <p class="text-gray-600">Cities</p>
                 </div>
             </div>
+
         </div>
 
         <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">

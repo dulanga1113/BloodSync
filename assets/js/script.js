@@ -1,14 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+
     console.log("BloodSync homepage loaded. Ready to connect donors!");
 
-    // Example of a simple interaction you might add with JS:
-    // const registerButton = document.querySelector('.bg-blood-red.text-white');
-    
-    // registerButton.addEventListener('click', (event) => {
-    //     event.preventDefault(); // Stop default navigation
-    //     alert('Registration process started! Thank you for considering a donation.');
-    //     // In a real application, this would redirect or show a modal
-    // });
-    
-    // Note: Since no dynamic behavior was explicitly shown, this file remains minimal.
+    // === COUNT UP ANIMATION ===
+    const counters = document.querySelectorAll('.countup');
+    const speed = 80; // smaller = faster
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            const increment = Math.ceil(target / speed);
+
+            if (count < target) {
+                counter.innerText = count + increment;
+                setTimeout(updateCount, 20);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+
+        updateCount();
+    });
+
 });
