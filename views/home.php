@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BloodSync - Connecting Donors, Saving Lives</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../assets/js/script.js"></script>
-
-</head>
-
-<body class="bg-white text-gray-900">
-
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-            <img src="../assets/img/logod.png" class="w-10" alt="BloodSync Logo">
-            <span class="text-2xl font-bold text-red-600">BloodSync</span>
-        </div>
-
-        <ul class="hidden md:flex space-x-8 text-lg">
-            <li><a href="#" class="hover:text-red-600">Home</a></li>
-            <li><a href="#" class="hover:text-red-600">Find Donors</a></li>
-            <li><a href="#" class="hover:text-red-600">About</a></li>
-            <li><a href="#" class="hover:text-red-600">Contact</a></li>
-        </ul>
-
-        <div class="flex items-center space-x-4">
-            <a href="login.php" class="text-red-600 font-medium hover:underline">Sign In</a>
-            <a href="register.php" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">
-                Register
-            </a>
-        </div>
-    </nav>
+<?php include('partials/header.php'); ?>
 
     <!-- HERO SECTION -->
     <section class="bg-red-50 px-6 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between">
@@ -194,53 +161,4 @@
         </a>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-200 px-6 md:px-20 py-12">
-
-        <div class="grid md:grid-cols-4 gap-10">
-
-            <div>
-                <div class="flex items-center space-x-2 mb-3">
-                    <img src="../assets/img/logob.png" class="w-8">
-                    <span class="text-xl font-bold text-white">BloodSync</span>
-                </div>
-                <p>Connecting donors and saving lives through efficient blood donation coordination.</p>
-            </div>
-
-            <div>
-                <h4 class="font-semibold text-white mb-3">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-red-400">About Us</a></li>
-                    <li><a href="#" class="hover:text-red-400">How It Works</a></li>
-                    <li><a href="#" class="hover:text-red-400">Find Donors</a></li>
-                    <li><a href="#" class="hover:text-red-400">Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-semibold text-white mb-3">Resources</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-red-400">Blood Types</a></li>
-                    <li><a href="#" class="hover:text-red-400">Donation Guide</a></li>
-                    <li><a href="#" class="hover:text-red-400">FAQs</a></li>
-                    <li><a href="#" class="hover:text-red-400">Blog</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-semibold text-white mb-3">Legal</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-red-400">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-red-400">Terms of Service</a></li>
-                    <li><a href="#" class="hover:text-red-400">Cookie Policy</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <p class="text-center text-gray-500 mt-10">
-            © 2024 BloodSync. All rights reserved.
-        </p>
-    </footer>
-
-</body>
-</html>
+<?php include('partials/footer.php'); ?>
