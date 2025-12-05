@@ -54,7 +54,7 @@
 
     <div class="grid md:grid-cols-4 gap-10 mt-12 text-center">
 
-        <!-- Register -->
+        <!-- Register (UPDATED + SPACED PLUS SIGN) -->
         <div>
             <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full" style="background:#FDECEC;">
                 <svg xmlns="http://www.w3.org/2000/svg" 
@@ -65,10 +65,16 @@
                     stroke-linecap="round" 
                     stroke-linejoin="round" 
                     viewBox="0 0 24 24">
+
                     <circle cx="12" cy="8" r="3"/>
                     <path d="M18 20c0-3.3-2.7-6-6-6s-6 2.7-6 6"/>
+
+                    <!-- Plus sign (clean spacing) -->
+                    <line x1="18.5" y1="3.5" x2="18.5" y2="7.5"/>
+                    <line x1="16.5" y1="5.5" x2="20.5" y2="5.5"/>
                 </svg>
             </div>
+
             <h3 class="mt-4 font-bold text-xl">Register</h3>
             <p class="text-gray-600 mt-2">
                 Create your profile with blood type and contact information
@@ -90,6 +96,7 @@
                     <circle cx="12" cy="11" r="2.5"/>
                 </svg>
             </div>
+
             <h3 class="mt-4 font-bold text-xl">Find Matches</h3>
             <p class="text-gray-600 mt-2">
                 Search for compatible donors or recipients in your area
