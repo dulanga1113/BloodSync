@@ -6,7 +6,7 @@ return [
     'port'     => 5432,
     'database' => 'bloodsync',
     'username' => 'postgres',     // change if you use another user
-    'password' => 'your_password', // ← replace with your actual PostgreSQL password
+    'password' => '8818', // ← replace with your actual PostgreSQL password
 
     // optional settings:
     'charset'  => 'utf8',
